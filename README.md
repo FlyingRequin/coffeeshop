@@ -1,16 +1,29 @@
-# React + Vite
+# 🐻 Berlin with Kids · 12–19 July 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-first website for a family week in Berlin (kids 11 & 13): day-by-day
+itinerary, an interactive map of every stop, and a packing checklist.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Plan tab** — one day per screen with swipe or chip navigation, activity
+  cards with transit hints, booking alerts, rain plans, and one-tap Google Maps
+  transit directions for every stop.
+- **Map tab** — Leaflet map with day-colored emoji pins, per-day filtering,
+  a "show my location" button, and popups that link straight to directions.
+- **Info tab** — booking reminders, a packing checklist that persists on the
+  device (localStorage), and practical tips (WelcomeCard, Monday closures…).
+- Auto-selects **today** while the trip is running, dark mode follows the
+  system, safe-area aware layout, installable to the home screen (web manifest).
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React 19 · Vite 7 · Tailwind CSS 4 · Leaflet 1.9 (CARTO/OpenStreetMap tiles)
 
-## Expanding the ESLint configuration
+## Develop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```sh
+npm install
+npm run dev       # local dev server
+npm run build     # production build to dist/
+npm run preview   # serve the production build
+```

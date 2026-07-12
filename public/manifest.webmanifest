@@ -1,0 +1,17 @@
+{
+  "name": "Berlin with Kids · 12–19 July 2026",
+  "short_name": "Berlin Kids",
+  "description": "Day-by-day Berlin family itinerary with maps and directions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "/bear.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
